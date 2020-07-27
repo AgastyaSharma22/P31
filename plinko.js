@@ -4,11 +4,11 @@ class Plinko{
           isStatic: true
       }
       this.body=Bodies.circle(x,y,radius,options);
-      this.radius=radius;
-      this.body.color=color(random(0,255),random(0,255),random(0,255));
+      this.radius=10;
+      this.body.shapeColor="blue";
     }
     display(){
         ellipseMode(RADIUS);
-        this.body.shapeColor=this.body.color;
+
     }
 }
